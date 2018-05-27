@@ -49,7 +49,7 @@ namespace AlpacaPBeM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("pop.gmail.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("smtp.gmail.com")]
         public string UsrEmailServer {
             get {
                 return ((string)(this["UsrEmailServer"]));
@@ -85,7 +85,7 @@ namespace AlpacaPBeM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("savegames")]
+        [global::System.Configuration.DefaultSettingValueAttribute("savedgames")]
         public string Savedgames {
             get {
                 return ((string)(this["Savedgames"]));
@@ -97,7 +97,7 @@ namespace AlpacaPBeM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("alpacapbem@gmail.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("turns@llamaserver.net")]
         public string TurnEmail {
             get {
                 return ((string)(this["TurnEmail"]));

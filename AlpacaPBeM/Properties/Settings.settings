@@ -9,7 +9,7 @@
       <Value Profile="(Default)">Password</Value>
     </Setting>
     <Setting Name="UsrEmailServer" Type="System.String" Scope="User">
-      <Value Profile="(Default)">pop.gmail.com</Value>
+      <Value Profile="(Default)">smtp.gmail.com</Value>
     </Setting>
     <Setting Name="UsrEmailServerPort" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">995</Value>
@@ -18,10 +18,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Savedgames" Type="System.String" Scope="User">
-      <Value Profile="(Default)">savegames</Value>
+      <Value Profile="(Default)">savedgames</Value>
     </Setting>
     <Setting Name="TurnEmail" Type="System.String" Scope="User">
-      <Value Profile="(Default)">alpacapbem@gmail.com</Value>
+      <Value Profile="(Default)">turns@llamaserver.net</Value>
     </Setting>
   </Settings>
 </SettingsFile>

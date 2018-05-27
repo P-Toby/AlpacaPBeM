@@ -21,7 +21,7 @@ namespace AlpacaPBeM
             try
             {
                 MailMessage Mail = new MailMessage();
-                SmtpClient Server = new SmtpClient("smtp.gmail.com");
+                SmtpClient Server = new SmtpClient(Settings.Default["UsrEmailServer"].ToString());
                 Mail.From = new MailAddress(Settings.Default["Email"].ToString());
                 Mail.To.Add(Settings.Default["TurnEmail"].ToString());
                 Mail.Subject = "Turn from AlpacaPBeM";
