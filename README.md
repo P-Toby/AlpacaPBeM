@@ -8,9 +8,18 @@ I'm primarily a C/C++ programmer and this is my first C# program so it is bound 
 The fields in the config file are pretty straight forward.
 
 Email: Your email
+
 Password: Your password (surprise)
+
 UsrEmailServer: Server address for the email provider that you use
+
 UsrEmailServerPort: Server port for the email provider that you use
+
 GameExecutable: Not used yet
+
 Savedgames: Path to your Dominions 5 savedgames folder, usually found in C:\Users\[YourUserName]\AppData\Roaming\Dominions5\savedgames
+
 TurnEmail: The email you wish to send your turns to, should most likely be turns[at]llamaserver.net
+
+
+Please note that there are probably (most certainly) bugs.
