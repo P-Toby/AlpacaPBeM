@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AlpacaPBeM.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Email" Type="System.String" Scope="User">
+      <Value Profile="(Default)">alpacapbem@gmail.com</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Password</Value>
+    </Setting>
+    <Setting Name="UsrEmailServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pop.gmail.com</Value>
+    </Setting>
+    <Setting Name="UsrEmailServerPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">995</Value>
+    </Setting>
+    <Setting Name="GameExecutable" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Savedgames" Type="System.String" Scope="User">
+      <Value Profile="(Default)">savegames</Value>
+    </Setting>
+    <Setting Name="TurnEmail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">alpacapbem@gmail.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
