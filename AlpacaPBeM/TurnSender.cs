@@ -38,7 +38,6 @@ namespace AlpacaPBeM
                     {
                         Console.WriteLine("Found 2h file " + file);
                         builder.Attachments.Add(file);
-
                         message.Body = builder.ToMessageBody();
 
                         fileFound = true;

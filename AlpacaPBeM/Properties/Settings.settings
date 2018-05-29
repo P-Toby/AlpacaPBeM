@@ -18,7 +18,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Savedgames" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\Peyman\AppData\Roaming\Dominions5\savedgames</Value>
+      <Value Profile="(Default)">C:\Users\Usr\AppData\Roaming\Dominions5\savedgames</Value>
     </Setting>
     <Setting Name="TurnEmail" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
