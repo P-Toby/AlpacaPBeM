@@ -23,7 +23,7 @@ namespace AlpacaPBeM
                 {
                     //Shitty way to test stuff until I get a proper UI implemented
                     Console.Clear();
-                    Console.WriteLine("Alpaca PBeM v0.01\n");
+                    Console.WriteLine("Alpaca PBeM v1.01\n");
                     Console.WriteLine("Type g to get turn\nType s to send turn\nq to quit");
                     string input = Console.ReadLine();
 
