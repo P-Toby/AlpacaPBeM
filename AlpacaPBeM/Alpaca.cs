@@ -16,6 +16,10 @@ namespace AlpacaPBeM
             TurnReceiver TurnReceiverManager = new TurnReceiver();
             TurnSender TurnSenderManager = new TurnSender();
 
+            //To all security exports, I apologize, this is just a temporary thing. I swear.
+            Console.WriteLine("Enter password for " + Settings.Default["Email"].ToString());
+            string password = Console.ReadLine();
+
             bool running = true;
             while(running)
             {
@@ -31,7 +35,7 @@ namespace AlpacaPBeM
                     {
                         Console.WriteLine("Enter name of game to fetch from email:");
                         string name = Console.ReadLine();
-                        TurnReceiverManager.GetTurn(name);
+                        TurnReceiverManager.GetTurn(name, password);
                         Console.WriteLine("Press any key to continue.");
                         Console.ReadKey();
 
@@ -40,7 +44,7 @@ namespace AlpacaPBeM
                     {
                         Console.WriteLine("Enter name of game to send to server:");
                         string name = Console.ReadLine();
-                        TurnSenderManager.SendTurn(name);
+                        TurnSenderManager.SendTurn(name, password);
                         Console.WriteLine("Press any key to continue.");
                         Console.ReadKey();
 

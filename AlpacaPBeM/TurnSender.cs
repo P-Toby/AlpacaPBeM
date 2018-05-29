@@ -18,7 +18,7 @@ namespace AlpacaPBeM
 
         }
 
-        public void SendTurn(string gameName)
+        public void SendTurn(string gameName, string pwd)
         {
             MimeMessage message = new MimeMessage();
             message.From.Add(new MailboxAddress(Settings.Default["Email"].ToString()));
@@ -53,12 +53,10 @@ namespace AlpacaPBeM
                     using (var client = new SmtpClient())
                     {
                         client.Connect(Settings.Default["UsrSMTPServer"].ToString(), int.Parse(Settings.Default["UsrSMTPServerPort"].ToString()), true);
-                        client.Authenticate(Settings.Default["Email"].ToString(), Settings.Default["Password"].ToString());
+                        client.Authenticate(Settings.Default["Email"].ToString(), pwd);
                         client.Send(message);
                         client.Disconnect(true);
                     }
-
-
                     Console.WriteLine("Sending mail.");
                 }
             }

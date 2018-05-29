@@ -37,18 +37,6 @@ namespace AlpacaPBeM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Password {
-            get {
-                return ((string)(this["Password"]));
-            }
-            set {
-                this["Password"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("smtp.gmail.com")]
         public string UsrSMTPServer {
             get {
@@ -85,7 +73,7 @@ namespace AlpacaPBeM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Usr\\AppData\\Roaming\\Dominions5\\savedgames")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Peyman\\AppData\\Roaming\\Dominions5\\savedgames")]
         public string Savedgames {
             get {
                 return ((string)(this["Savedgames"]));

@@ -26,14 +26,14 @@ namespace AlpacaPBeM
         * Check and remember turn number for each game
         */
 
-        public void GetTurn(string gameName)
+        public void GetTurn(string gameName, string pwd)
         {
             try
             {
                 using (var client = new ImapClient())
                 {
                     client.Connect(Settings.Default["UsrIMAPServer"].ToString(), int.Parse(Settings.Default["UsrIMAPServerPort"].ToString()), true);
-                    client.Authenticate(Settings.Default["Email"].ToString(), Settings.Default["Password"].ToString());
+                    client.Authenticate(Settings.Default["Email"].ToString(), pwd);
 
                     var inbox = client.Inbox;
                     inbox.Open(FolderAccess.ReadOnly);
