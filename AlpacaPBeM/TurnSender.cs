@@ -53,7 +53,7 @@ namespace AlpacaPBeM
                 {
                     using (var client = new SmtpClient())
                     {
-                        client.Connect(Settings.Default["UsrEmailServer"].ToString(), int.Parse(Settings.Default["UsrEmailServerPort"].ToString()), true);
+                        client.Connect(Settings.Default["UsrSMTPServer"].ToString(), int.Parse(Settings.Default["UsrSMTPServerPort"].ToString()), true);
                         client.Authenticate(Settings.Default["Email"].ToString(), Settings.Default["Password"].ToString());
                         client.Send(message);
                         client.Disconnect(true);
@@ -74,7 +74,7 @@ namespace AlpacaPBeM
         //    try
         //    {
         //        MailMessage Mail = new MailMessage();
-        //        SmtpClient Server = new SmtpClient(Settings.Default["UsrEmailServer"].ToString());
+        //        SmtpClient Server = new SmtpClient(Settings.Default["UsrSMTPServer"].ToString());
         //        Mail.From = new MailAddress(Settings.Default["Email"].ToString());
         //        Mail.To.Add(Settings.Default["TurnEmail"].ToString());
         //        Mail.Subject = "Turn from AlpacaPBeM";
