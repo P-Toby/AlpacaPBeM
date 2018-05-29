@@ -9,11 +9,13 @@ The fields in the config file are pretty straight forward.
 
 Email: Your email
 
-Password: Your password (surprise)
+UsrSMTPServer: SMTP server address
 
-UsrEmailServer: Server address for the email provider that you use
+UsrSMTPServerPort: SMTP server port
 
-UsrEmailServerPort: Server port for the email provider that you use
+UsrIMAPServer: IMAP server address
+
+UsrIMAPServerPort: IMAP server port
 
 GameExecutable: Not used yet
 
