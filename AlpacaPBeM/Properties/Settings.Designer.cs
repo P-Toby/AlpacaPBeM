@@ -61,7 +61,7 @@ namespace AlpacaPBeM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("995")]
+        [global::System.Configuration.DefaultSettingValueAttribute("465")]
         public int UsrEmailServerPort {
             get {
                 return ((int)(this["UsrEmailServerPort"]));
@@ -85,7 +85,7 @@ namespace AlpacaPBeM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("savedgames")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Usr\\AppData\\Roaming\\Dominions5\\savedgames")]
         public string Savedgames {
             get {
                 return ((string)(this["Savedgames"]));

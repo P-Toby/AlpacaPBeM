@@ -12,13 +12,13 @@
       <Value Profile="(Default)">smtp.gmail.com</Value>
     </Setting>
     <Setting Name="UsrEmailServerPort" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">995</Value>
+      <Value Profile="(Default)">465</Value>
     </Setting>
     <Setting Name="GameExecutable" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Savedgames" Type="System.String" Scope="User">
-      <Value Profile="(Default)">savedgames</Value>
+      <Value Profile="(Default)">C:\Users\Usr\AppData\Roaming\Dominions5\savedgames</Value>
     </Setting>
     <Setting Name="TurnEmail" Type="System.String" Scope="User">
       <Value Profile="(Default)">turns@llamaserver.net</Value>
