@@ -39,14 +39,6 @@ namespace AlpacaPBeM
                     inbox.Open(FolderAccess.ReadOnly);
 
                     int count = inbox.Count();
-
-                    for (int i = 0; i < inbox.Count; i++)
-                    {
-                        var message = inbox.GetMessage(i);
-                        Console.WriteLine("Subject: {0}", message.Subject);
-                    }
-
-
                     bool foundGame = false;
                     for (int i = count-1; i > 0;  --i)
                     {
