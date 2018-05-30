@@ -18,7 +18,7 @@
       <Value Profile="(Default)">C:\Users\Peyman\AppData\Roaming\Dominions5\savedgames</Value>
     </Setting>
     <Setting Name="TurnEmail" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">turns@llamaserver.net</Value>
     </Setting>
     <Setting Name="UsrIMAPServer" Type="System.String" Scope="User">
       <Value Profile="(Default)">imap.gmail.com</Value>

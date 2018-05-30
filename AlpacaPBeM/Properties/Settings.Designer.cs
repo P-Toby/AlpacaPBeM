@@ -85,7 +85,7 @@ namespace AlpacaPBeM.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("turns@llamaserver.net")]
         public string TurnEmail {
             get {
                 return ((string)(this["TurnEmail"]));

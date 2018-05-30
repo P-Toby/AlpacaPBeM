@@ -39,12 +39,21 @@ namespace AlpacaPBeM
                     inbox.Open(FolderAccess.ReadOnly);
 
                     int count = inbox.Count();
+
+                    for (int i = 0; i < inbox.Count; i++)
+                    {
+                        var message = inbox.GetMessage(i);
+                        Console.WriteLine("Subject: {0}", message.Subject);
+                    }
+
+
                     bool foundGame = false;
-                    for (int i = 0; i < count && i < 50; ++i) //Will at most search through 50 emails atm
+                    for (int i = count-1; i > 0;  --i)
                     {
                         MimeMessage message = inbox.GetMessage(i);
 
-                        if ((message.From.ToString().Contains(Settings.Default["TurnEmail"].ToString())) && (message.Subject.ToString().Contains(gameName)))
+                        if ((message.From.ToString().Contains(Settings.Default["TurnEmail"].ToString())) && (message.Subject.ToString().Contains(gameName))
+                            && !(message.Subject.ToString().Contains("received")))
                         {
                             Console.WriteLine("Message from llamaserver: " + message.Subject.ToString() + " " + message.From.ToString());
                             string savePath = System.IO.Path.Combine(Settings.Default["Savedgames"].ToString(), gameName);
