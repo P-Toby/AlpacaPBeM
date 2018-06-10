@@ -26,7 +26,7 @@ namespace AlpacaPBeM
         * Check and remember turn number for each game
         */
 
-        public void GetTurn(string gameName, string pwd)
+        public bool GetTurn(string gameName, string pwd)
         {
             try
             {
@@ -71,10 +71,11 @@ namespace AlpacaPBeM
                         }
                     }
 
-                    if (!foundGame)
+                    if (foundGame)
                     {
-                        Console.WriteLine("No game found with the name " + gameName);
+                        return true;
                     }
+                    
 
                     client.Disconnect(true);
                 }
@@ -83,6 +84,8 @@ namespace AlpacaPBeM
             {
                 Console.WriteLine(ex.ToString());
             }
+
+            return false;
         }
     }
 }

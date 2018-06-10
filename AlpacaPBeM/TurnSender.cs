@@ -18,7 +18,7 @@ namespace AlpacaPBeM
 
         }
 
-        public void SendTurn(string gameName, string pwd)
+        public bool SendTurn(string gameName, string pwd)
         {
             MimeMessage message = new MimeMessage();
             message.From.Add(new MailboxAddress(Settings.Default["Email"].ToString()));
@@ -46,7 +46,7 @@ namespace AlpacaPBeM
                 }
                 if (!fileFound)
                 {
-                    Console.WriteLine("2h file not found!");
+                    return false;
                 }
                 else
                 {
@@ -64,6 +64,7 @@ namespace AlpacaPBeM
             {
                 Console.WriteLine(ex.ToString());
             }
+            return true;
         }
     }
 }
